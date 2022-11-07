@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+#general-container {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 92%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#picture {
+    width: 100%;
+}
+
+#bottom {
+    padding: 25px;
+}
+
+#type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: hsl(228, 12%, 48%);
+    opacity: 70%;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+}
+
+#product {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+}
+
+#description {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+}
+
+#offer {
+    margin-right: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+#previous {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: line-through
+}
+
+#add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+}
+
+#add:hover {
+    background-color: #306652;
+    cursor: pointer;
+}
+
+#add p {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+@media (min-width: 800px){
+    #general-container {
+        display: flex;
+        flex-direction: row;
+        max-width: none;
+        width:566px;
+    }
+
+    #top {
+        display: flex;
+        width: 50%;
+    }
+
+    #picture {
+        content: url("./images/image-product-desktop.jpg");
+        align-self: center;
+    }
+
+    #bottom {
+        width: 50%;
+        padding: 30px;
+    }
+
+    #description {
+        margin-top: 25px;
+    }
+}
